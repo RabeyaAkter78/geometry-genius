@@ -22,39 +22,26 @@ document.getElementById('triangle-btn').addEventListener('click', function () {
 
 
     // calculate the area:
-    const newAreaOfGeometry = (newBaseOfGeometry * newHeightOfGeometry);
-    // newAreaOfGeometry = areaOfGeometry;
+    const newAreaOfGeometry = 0.5 * (newBaseOfGeometry * newHeightOfGeometry).toFixed(2);
+
 
     // validation:
 
-   
-
-    // if (isNaN(newAreaOfGeometry)) {
-    //     alert('Please enter a valid Number');
-    //     return;
-
+    if (isNaN(newAreaOfGeometry)) {
+        alert('Please enter a valid Number');
+        return;
+    }
 
 
-    // // clear the inout area:
-    // baseOfGeometry = '';
-    // heightOfGeometry = '';
+
 
     // console.log(geometryName, newBaseOfGeometry, newHeightOfGeometry, newAreaOfGeometry);
 
     displayData(geometryName, newAreaOfGeometry);
+    
+    // clear input field
+    baseOfGeometry.value = '';
+    heightOfGeometry.value = '';
+    
+ 
 });
-
-function displayData(geometryName, newAreaOfGeometry) {
-    const container = document.getElementById("table-container");
-
-    const tr = document.createElement("tr");
-    tr.innerHTML = `
-    <td>${serial}</td>
-    <td>${geometryName}</td>
-    <td>${newAreaOfGeometry}</td>
-    `;
-
-    container.appendChild(tr);
-
-
-}

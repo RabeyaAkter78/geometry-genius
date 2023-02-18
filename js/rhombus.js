@@ -18,7 +18,7 @@ document.getElementById('rhombus-btn').addEventListener('click', function () {
     newHeightOfGeometry = parseFloat(newHeightOfGeometryString);
 
     // calculate the area:
-    const newAreaOfGeometry = 0.5 * (newBaseOfGeometry * newHeightOfGeometry);
+    const newAreaOfGeometry = 0.5 * (newBaseOfGeometry * newHeightOfGeometry).toFixed(2);
     // newAreaOfGeometry = areaOfGeometry;
     // validation:
 
@@ -29,4 +29,7 @@ document.getElementById('rhombus-btn').addEventListener('click', function () {
 
 
     displayData(geometryName, newAreaOfGeometry);
+     // clear input field
+     baseOfGeometry.value = '';
+     heightOfGeometry.value = '';
 });

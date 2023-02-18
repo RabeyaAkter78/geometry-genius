@@ -17,7 +17,7 @@ document.getElementById('pentagon-btn').addEventListener('click', function () {
     newBaseOfGeometry = parseFloat(newBaseOfGeometryString);
 
     // calculate the area:
-    const newAreaOfGeometry = 0.5*(newWidthOfGeometry * newBaseOfGeometry);
+    const newAreaOfGeometry = 0.5*(newWidthOfGeometry * newBaseOfGeometry).toFixed(2);
     // newAreaOfGeometry = areaOfGeometry;
 
     // validation:
@@ -27,4 +27,7 @@ document.getElementById('pentagon-btn').addEventListener('click', function () {
     }
 
     displayData(geometryName, newAreaOfGeometry);
+     // clear input field
+     baseOfGeometry.value = '';
+     heightOfGeometry.value = '';
 });

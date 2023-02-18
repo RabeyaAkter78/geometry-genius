@@ -30,4 +30,7 @@ document.getElementById('Parallelogram-btn').addEventListener('click', function 
 
 
     displayData(geometryName, newAreaOfGeometry);
+     // clear input field
+     baseOfGeometry.value = '';
+     heightOfGeometry.value = '';
 });
