@@ -32,149 +32,168 @@
     </header>
 
     <main>
-        <section>
+        <section class=" mt-8 p-4 lg:px-12 bg-blue-300 flex flex-col md:flex-row lg:flex-row gap-4">
             <!-- cards -->
-            <div class="w-[70%] bg-gray-300 ">
 
-                <div class="card grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure class="px-10 pt-10">
-                            <img src="images/triangle.png" alt="Shoes" class="rounded-xl w-full h-40" />
-                        </figure>
+            <div class="card grid md:grid-cols-2 lg:grid-cols-3 gap-4 bg-gray-300 w-[70%] ">
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl w-full h-40" />
+                    </figure>
 
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Triangle</h2>
-                            <p>Area (A) =
-                                0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i>
-                                h</p>
+                    <div class="card-body items-center text-center">
+                        <h2 id="name-triangle" class="card-title">Triangle</h2>
+                        <p id="triangle-area">Area (A) =
+                            0.5 <i class="fa-solid fa-xmark"></i> b <i class="fa-solid fa-xmark"></i>
+                            h</p>
 
-                            <div class="mb-10">
-                                <input type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                                <input type="text" placeholder="h" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                            </div>
+                        <div class="mb-10">
+                            <input id="triangle-base" type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input  id="triangle-height" type="text" placeholder="h" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                        </div>
 
-                            <div class="card-actions">
-                                <button class="btn btn-primary">Calculate</button>
-                            </div>
+                        <div class="card-actions">
+                            <button id="triangle-btn" class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure class="px-10 pt-10">
-                            <img src="images/rectangle.png" alt="Shoes" class="rounded-xl w-full h-40" />
-                        </figure>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rectangle.png" alt="Shoes" class="rounded-xl w-full h-40" />
+                    </figure>
 
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Rectangle</h2>
-                            <p>Area (A) = w <i class="fa-solid fa-xmark"></i> I</p>
+                    <div class="card-body items-center text-center">
+                        <h2 id="name-rectangle" class="card-title">Rectangle</h2>
+                        <p id="rectangle-area">Area (A) = w <i class="fa-solid fa-xmark"></i> I</p>
 
-                            <div class="mb-10">
-                                <input type="text" placeholder="W" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                                <input type="text" placeholder="I" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                            </div>
+                        <div class="mb-10">
+                            <input id="rectangle-w" type="text" placeholder="W" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input id="rectangle-l" type="text" placeholder="I" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                        </div>
 
-                            <div class="card-actions">
-                                <button class="btn btn-primary">Calculate</button>
-                            </div>
+                        <div class="card-actions">
+                            <button id="rectangle-btn" class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure class="px-10 pt-10">
-                            <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl w-full h-40" />
-                        </figure>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl w-full h-40" />
+                    </figure>
 
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Parallelogram</h2>
-                            <p>Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Parallelogram</h2>
+                        <p>Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
 
-                            <div class="mb-10">
-                                <input type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                                <input type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                            </div>
+                        <div class="mb-10">
+                            <input type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                        </div>
 
-                            <div class="card-actions">
-                                <button class="btn btn-primary">Calculate</button>
-                            </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure class="px-10 pt-10">
-                            <img src="images/rhombus.png" alt="Shoes" class="rounded-xl w-full h-40" />
-                        </figure>
+                </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rhombus.png" alt="Shoes" class="rounded-xl w-full h-40" />
+                    </figure>
 
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Rhombus</h2>
-                            <p>Area (A) =
-                                0.5 <i class="fa-solid fa-xmark"></i> d<sub>1</sub> <i class="fa-solid fa-xmark"></i> d <sub>2</sub>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Rhombus</h2>
+                        <p>Area (A) =
+                            0.5 <i class="fa-solid fa-xmark"></i> d<sub>1</sub> <i class="fa-solid fa-xmark"></i> d
+                            <sub>2</sub>
+                        </p>
+
+                        <div class="mb-10">
+                            <p> d<sub>1</sub>=<input type="text" class="w-8 bg-gray-200 p-2" /><span> cm</span>
+                            </p>
+                            <p> d<sub>2</sub>=<input type="text" class="w-8 bg-gray-200 p-2" /><span> cm</span>
                             </p>
 
-                            <div class="mb-10">
-                               <p> d<sub>1</sub>=<input type="text"  class="w-8 bg-gray-200 p-2" /><span> cm</span></p> 
-                               <p> d<sub>2</sub>=<input type="text" class="w-8 bg-gray-200 p-2" /><span> cm</span></p> 
 
-                                <!-- <input type="text" placeholder="d" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                                <input type="text" placeholder="d2" class="w-14 bg-gray-200 p-2" /><span> cm</span> -->
-                            </div>
-
-                            <div class="card-actions">
-                                <button class="btn btn-primary">Calculate</button>
-                            </div>
                         </div>
-                    </div>
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure class="px-10 pt-10">
-                            <img src="images/pentagon.png" alt="Shoes" class="rounded-xl w-full h-40" />
-                        </figure>
 
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Pentagon</h2>
-                            <p>Area (A) =
-                                0.5 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i>
-                                b</p>
-
-                            <div class="mb-10">
-                                <input type="text" placeholder="p" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                                <input type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                            </div>
-
-                            <div class="card-actions">
-                                <button class="btn btn-primary">Calculate</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card w-full bg-base-100 shadow-xl">
-                        <figure class="px-10 pt-10">
-                            <img src="images/ellipse.png" alt="Shoes" class="rounded-xl w-full h-40" />
-                        </figure>
-
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Ellipse</h2>
-                            <p>Area (A) =pi*
-                                ab</p>
-
-                            <div class="mb-10">
-                                <input type="text" placeholder="a" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                                <input type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                            </div>
-
-                            <div class="card-actions">
-                                <button class="btn btn-primary">Calculate</button>
-                            </div>
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- calculate -->
-                <div class="lg:[30%]">
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/pentagon.png" alt="Shoes" class="rounded-xl w-full h-40" />
+                    </figure>
 
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Pentagon</h2>
+                        <p>Area (A) =
+                            0.5 <i class="fa-solid fa-xmark"></i> p <i class="fa-solid fa-xmark"></i>
+                            b</p>
+
+                        <div class="mb-10">
+                            <input type="text" placeholder="p" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
                 </div>
+                <div class="card w-full bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="images/ellipse.png" alt="Shoes" class="rounded-xl w-full h-40" />
+                    </figure>
+
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Ellipse</h2>
+                        <p>Area (A) =pi*
+                            ab</p>
+
+                        <div class="mb-10">
+                            <input type="text" placeholder="a" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                        </div>
+
+                        <div class="card-actions">
+                            <button class="btn btn-primary">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- calculate -->
+            <div class=" w-full md:w-[30%] lg:w-[30%] bg-pink-300 text-xl font-medium text-center mt-8">
+               <h1 class="underline ">Area Calculation</h1>
+
+
+               <div class="overflow-x-auto">
+                <table class="table w-full">
+                  <!-- head -->
+                  <thead >
+                    <tr>
+                      <th>No</th>
+                      <th>Area</th>
+                      <th>Convert cm<sup>2</sup> to m<sup>2</sup></th>
+                      <th>remove</th>
+                    </tr>
+                  </thead>
+                  <tbody id="table-container">
+
+                  </tbody>
+                </table>
+              </div>
+
             </div>
         </section>
     </main>
 
 
 
-
-    <!-- connect with js -->
+<!-- connect with js -->
     <script src="js/index.js"></script>
+    <script src="js/rectangle.js"></script>
 </body>
 
 </html>
