@@ -48,8 +48,10 @@
                             h</p>
 
                         <div class="mb-10">
-                            <input id="triangle-base" type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                            <input  id="triangle-height" type="text" placeholder="h" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input id="triangle-base" type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span>
+                                cm</span>
+                            <input id="triangle-height" type="text" placeholder="h"
+                                class="w-14 bg-gray-200 p-2" /><span> cm</span>
                         </div>
 
                         <div class="card-actions">
@@ -67,8 +69,10 @@
                         <p id="rectangle-area">Area (A) = w <i class="fa-solid fa-xmark"></i> I</p>
 
                         <div class="mb-10">
-                            <input id="rectangle-w" type="text" placeholder="W" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                            <input id="rectangle-l" type="text" placeholder="I" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input id="rectangle-w" type="text" placeholder="W" class="w-14 bg-gray-200 p-2" /><span>
+                                cm</span>
+                            <input id="rectangle-l" type="text" placeholder="I" class="w-14 bg-gray-200 p-2" /><span>
+                                cm</span>
                         </div>
 
                         <div class="card-actions">
@@ -86,8 +90,10 @@
                         <p id="Parallelogram-area">Area (A) = b <i class="fa-solid fa-xmark"></i> h</p>
 
                         <div class="mb-10">
-                            <input id="Parallelogram-base" type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                            <input id="Parallelogram-height" type="text" placeholder="h" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input id="Parallelogram-base" type="text" placeholder="b"
+                                class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input id="Parallelogram-height" type="text" placeholder="h"
+                                class="w-14 bg-gray-200 p-2" /><span> cm</span>
                         </div>
 
                         <div class="card-actions">
@@ -108,9 +114,11 @@
                         </p>
 
                         <div class="mb-10">
-                            <p> d<sub>1</sub>=<input id="inputField-1" type="text" class="w-8 bg-gray-200 p-2" /><span> cm</span>
+                            <p> d<sub>1</sub>=<input id="inputField-1" type="text" class="w-8 bg-gray-200 p-2" /><span>
+                                    cm</span>
                             </p>
-                            <p> d<sub>2</sub>=<input id="inputField-2" type="text" class="w-8 bg-gray-200 p-2" /><span> cm</span>
+                            <p> d<sub>2</sub>=<input id="inputField-2" type="text" class="w-8 bg-gray-200 p-2" /><span>
+                                    cm</span>
                             </p>
                         </div>
 
@@ -131,8 +139,10 @@
                             b</p>
 
                         <div class="mb-10">
-                            <input id="pentagon-p" type="text" placeholder="p" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                            <input id="pentagon-b" type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input id="pentagon-p" type="text" placeholder="p" class="w-14 bg-gray-200 p-2" /><span>
+                                cm</span>
+                            <input id="pentagon-b" type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span>
+                                cm</span>
                         </div>
 
                         <div class="card-actions">
@@ -146,42 +156,44 @@
                     </figure>
 
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Ellipse</h2>
-                        <p>Area (A) =pi*
+                        <h2 id="name-ellipse" class="card-title">Ellipse</h2>
+                        <p id="ellipse-area">Area (A) =pi*
                             ab</p>
 
                         <div class="mb-10">
-                            <input type="text" placeholder="a" class="w-14 bg-gray-200 p-2" /><span> cm</span>
-                            <input type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span> cm</span>
+                            <input id="ellipse-a" type="text" placeholder="a" class="w-14 bg-gray-200 p-2" /><span>
+                                cm</span>
+                            <input id="ellipse-b" type="text" placeholder="b" class="w-14 bg-gray-200 p-2" /><span>
+                                cm</span>
                         </div>
 
                         <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button id="btn-ellipse" class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- calculate -->
             <div class=" w-full md:w-[30%] lg:w-[30%] bg-pink-300 text-xl font-medium text-center mt-8">
-               <h1 class="underline ">Area Calculation</h1>
+                <h1 class="underline ">Area Calculation</h1>
 
 
-               <div class="overflow-x-auto">
-                <table class="table w-full">
-                  <!-- head -->
-                  <thead >
-                    <tr>
-                      <th>No</th>
-                      <th>Area</th>
-                      <th>Convert cm<sup>2</sup> to m<sup>2</sup></th>
-                      <th>remove</th>
-                    </tr>
-                  </thead>
-                  <tbody id="table-container">
+                <div class="overflow-x-auto">
+                    <table class="table w-full">
+                        <!-- head -->
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Area</th>
+                                <th>Convert cm<sup>2</sup> to m<sup>2</sup></th>
+                                <th>remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
 
-                  </tbody>
-                </table>
-              </div>
+                        </tbody>
+                    </table>
+                </div>
 
             </div>
         </section>
@@ -189,12 +201,13 @@
 
 
 
-<!-- connect with js -->
+    <!-- connect with js -->
     <script src="js/index.js"></script>
     <script src="js/rectangle.js"></script>
     <script src="js/parallelogram.js"></script>
     <script src="js/rhombus.js"></script>
     <script src="js/pentagon.js"></script>
+    <script src="js/ellipse.js"></script>
 </body>
 
 </html>
