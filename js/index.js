@@ -18,9 +18,19 @@ document.getElementById('triangle-btn').addEventListener('click', function () {
     const newHeightOfGeometryString = heightOfGeometry.value;
     newHeightOfGeometry = parseFloat(newHeightOfGeometryString);
 
+
+
+
     // calculate the area:
     const newAreaOfGeometry =(newBaseOfGeometry * newHeightOfGeometry);
-    anewAreaOfGeometry = areaOfGeometry;
+    // newAreaOfGeometry = areaOfGeometry;
+
+    // validation:
+if (isNaN(newAreaOfGeometry)) {
+    alert('Please enter a valid Number');
+    return;
+}
+
 
     // // clear the inout area:
     // baseOfGeometry = '';

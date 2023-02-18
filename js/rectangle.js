@@ -18,8 +18,13 @@ document.getElementById('rectangle-btn').addEventListener('click', function () {
 
     // calculate the area:
     const newAreaOfGeometry =(newWidthOfGeometry * newLengthOfGeometry);
-    anewAreaOfGeometry = areaOfGeometry;
+    // newAreaOfGeometry = areaOfGeometry;
 
+       // validation:
+if (isNaN(newAreaOfGeometry)) {
+    alert('Please enter a valid Number');
+    return;
+}
 
     displayData(geometryName,newAreaOfGeometry);
 });
