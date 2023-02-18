@@ -1,6 +1,6 @@
 
 document.getElementById('rectangle-btn').addEventListener('click', function () {
-    serial+=1;
+    serial += 1;
 
     const geometryName = document.getElementById('name-rectangle').innerText;
 
@@ -17,14 +17,14 @@ document.getElementById('rectangle-btn').addEventListener('click', function () {
     newLengthOfGeometry = parseFloat(newLengthOfGeometryString);
 
     // calculate the area:
-    const newAreaOfGeometry =(newWidthOfGeometry * newLengthOfGeometry);
+    const newAreaOfGeometry = (newWidthOfGeometry * newLengthOfGeometry);
     // newAreaOfGeometry = areaOfGeometry;
 
-       // validation:
-if (isNaN(newAreaOfGeometry)) {
-    alert('Please enter a valid Number');
-    return;
-}
+    // validation:
+    if (isNaN(newAreaOfGeometry)) {
+        alert('Please enter a valid Number');
+        return;
+    }
 
-    displayData(geometryName,newAreaOfGeometry);
+    displayData(geometryName, newAreaOfGeometry);
 });

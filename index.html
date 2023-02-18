@@ -101,23 +101,21 @@
                     </figure>
 
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title">Rhombus</h2>
-                        <p>Area (A) =
+                        <h2 id="rhombus-name" class="card-title">Rhombus</h2>
+                        <p id="rhombus-area">Area (A) =
                             0.5 <i class="fa-solid fa-xmark"></i> d<sub>1</sub> <i class="fa-solid fa-xmark"></i> d
                             <sub>2</sub>
                         </p>
 
                         <div class="mb-10">
-                            <p> d<sub>1</sub>=<input type="text" class="w-8 bg-gray-200 p-2" /><span> cm</span>
+                            <p> d<sub>1</sub>=<input id="inputField-1" type="text" class="w-8 bg-gray-200 p-2" /><span> cm</span>
                             </p>
-                            <p> d<sub>2</sub>=<input type="text" class="w-8 bg-gray-200 p-2" /><span> cm</span>
+                            <p> d<sub>2</sub>=<input id="inputField-2" type="text" class="w-8 bg-gray-200 p-2" /><span> cm</span>
                             </p>
-
-
                         </div>
 
                         <div class="card-actions">
-                            <button class="btn btn-primary">Calculate</button>
+                            <button id="rhombus-btn" class="btn btn-primary">Calculate</button>
                         </div>
                     </div>
                 </div>
@@ -195,6 +193,7 @@
     <script src="js/index.js"></script>
     <script src="js/rectangle.js"></script>
     <script src="js/parallelogram.js"></script>
+    <script src="js/rhombus.js"></script>
 </body>
 
 </html>

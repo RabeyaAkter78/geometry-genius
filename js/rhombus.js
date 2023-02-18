@@ -1,28 +1,27 @@
 
-document.getElementById('Parallelogram-btn').addEventListener('click', function () {
-
-
+document.getElementById('rhombus-btn').addEventListener('click', function () {
     serial += 1;
 
-    const geometryName = document.getElementById('name-Parallelogram').innerText;
+    const geometryName = document.getElementById('rhombus-name').innerText;
 
     // get the value of Area:
-    const areaOfGeometry = document.getElementById('Parallelogram-area').innerText;
+    const areaOfGeometry = document.getElementById('rhombus-area').innerText;
 
 
     // get the height and base of triangle:
-    const baseOfGeometry = document.getElementById('Parallelogram-base');
+    const baseOfGeometry = document.getElementById('inputField-1');
     const newBaseOfGeometryString = baseOfGeometry.value;
     newBaseOfGeometry = parseFloat(newBaseOfGeometryString);
 
-    const heightOfGeometry = document.getElementById('Parallelogram-height');
+    const heightOfGeometry = document.getElementById('inputField-2');
     const newHeightOfGeometryString = heightOfGeometry.value;
     newHeightOfGeometry = parseFloat(newHeightOfGeometryString);
 
     // calculate the area:
-    const newAreaOfGeometry = (newBaseOfGeometry * newHeightOfGeometry);
+    const newAreaOfGeometry = 0.5 * (newBaseOfGeometry * newHeightOfGeometry);
     // newAreaOfGeometry = areaOfGeometry;
     // validation:
+
     if (isNaN(newAreaOfGeometry)) {
         alert('Please enter a valid Number');
         return;

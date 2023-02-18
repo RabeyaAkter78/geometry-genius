@@ -1,9 +1,9 @@
 //  for triangle:
 // set addEventListener on btn:
-let serial=0;
+let serial = 0;
 document.getElementById('triangle-btn').addEventListener('click', function () {
 
-    serial+=1;
+    serial += 1;
     const geometryName = document.getElementById('name-triangle').innerText;
 
     // get the value of Area:
@@ -22,14 +22,17 @@ document.getElementById('triangle-btn').addEventListener('click', function () {
 
 
     // calculate the area:
-    const newAreaOfGeometry =(newBaseOfGeometry * newHeightOfGeometry);
+    const newAreaOfGeometry = (newBaseOfGeometry * newHeightOfGeometry);
     // newAreaOfGeometry = areaOfGeometry;
 
     // validation:
-if (isNaN(newAreaOfGeometry)) {
-    alert('Please enter a valid Number');
-    return;
-}
+
+   
+
+    // if (isNaN(newAreaOfGeometry)) {
+    //     alert('Please enter a valid Number');
+    //     return;
+
 
 
     // // clear the inout area:
@@ -38,10 +41,10 @@ if (isNaN(newAreaOfGeometry)) {
 
     // console.log(geometryName, newBaseOfGeometry, newHeightOfGeometry, newAreaOfGeometry);
 
-    displayData(geometryName,newAreaOfGeometry);
+    displayData(geometryName, newAreaOfGeometry);
 });
 
-function displayData (geometryName,newAreaOfGeometry){
+function displayData(geometryName, newAreaOfGeometry) {
     const container = document.getElementById("table-container");
 
     const tr = document.createElement("tr");
@@ -50,8 +53,8 @@ function displayData (geometryName,newAreaOfGeometry){
     <td>${geometryName}</td>
     <td>${newAreaOfGeometry}</td>
     `;
-    
+
     container.appendChild(tr);
-    
+
 
 }
