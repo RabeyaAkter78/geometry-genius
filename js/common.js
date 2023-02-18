@@ -16,9 +16,19 @@ function displayData(geometryName, newAreaOfGeometry) {
 };
 
 // random color generator:
-document.getElementById('first-card').addEventListener('mouseenter',function(){
-// console.log('color generator');
+const firstCard = document.getElementById('first-card')
+firstCard.addEventListener('mouseenter', function () {
 
+    const r = Math.floor(Math.random() * 255);
+    const g = Math.floor(Math.random() * 255);
+    const b = Math.floor(Math.random() * 255);
+    const color = "rgb(" + r + "," + g + "," + b + ")"
+    firstCard.style.backgroundColor = color;
+})
+firstCard.addEventListener('mouseleave', function () {
+
+
+    firstCard.style.backgroundColor = "white";
 })
 
 
